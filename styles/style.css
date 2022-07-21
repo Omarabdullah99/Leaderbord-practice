@@ -1,0 +1,204 @@
+/* poppin fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@500&display=swap');
+
+/* * {
+    margin: 0%;
+    padding: 0%;
+} */
+
+body {
+     font-family: 'Poppins', sans-serif;
+     background-color: #F3F1FF;
+}
+/* playes css */
+
+hr {
+    border:1px solid #D1D1D1;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 21px;
+    border-radius: 15px 15px;
+}
+.player-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+    
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-row-gap: 30px;
+   margin-bottom: 30px;
+}
+.player  {
+
+    display: flex;
+    align-items: center;
+
+}
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+   margin-left: 16px;
+   font-size: 18px;
+}
+ 
+
+/* blogs css */
+.Blog-title {
+    font-size: 24px;
+    color: #562EFF;
+    margin: 30px;
+}
+.blogs {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.blog {
+    display: flex;
+}
+.blog img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-content {
+    margin-left: 20px;
+}
+
+.blog-content h3 {
+    font-size: 20px;
+
+}
+.blog-content h4 {
+    font-size: 16px;
+}
+
+/* latest style */
+.latest-item {
+    display: flex;
+    justify-content: center;
+    gap: 0px 30px;
+}
+.latest h3 {
+    font-size: 20px;
+}
+.latest p {
+    font-size: 15px;
+    color: #ED6B4F;
+}
+.latest img {
+    width: 224px;
+    height: 104px;
+}
+
+.latest-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fa-star.gold{
+    color: #FFC014;
+}
+
+.fa-star.emty {
+    color: #AEAEAE;
+}
+
+/* latest-course responsive */
+
+@media screen and (max-width:992px) {
+
+    .latest-item{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+
+}
+
+@media screen and (max-width:688px) {
+
+
+    /* players responsive start */
+
+    .players{
+        
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+    .player{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* players responsive start */
+
+    /* blog responsive start */
+   
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* blog responsive end */
+
+ 
+    
+}
+
+@media screen and (min-width:688px) and (max-width:992px) {
+
+    .players{
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+       
+    }
+
+    .player{
+        flex-direction: column;
+       justify-content: center;
+    }
+
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
